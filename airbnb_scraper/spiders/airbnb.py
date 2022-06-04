@@ -100,7 +100,6 @@ class AirbnbSpider(scrapy.Spider):
         
         # Return a List of all homes
         homes = None
-        print('kinshukdosi12', homes)
         if homes is None:
             try:
                 homes = data.get('explore_tabs')[0].get('sections')[1].get('listings')
