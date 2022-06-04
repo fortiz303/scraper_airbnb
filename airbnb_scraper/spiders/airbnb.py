@@ -289,7 +289,7 @@ class AirbnbSpider(scrapy.Spider):
         #if listing['is_new_listing'] == True:
         #   yield listing
         print(listing)
-        if newonly == 'Y':
+        if newonly.upper() == 'Y':
             if listing['is_new_listing'] == True:
                 yield listing
         else:
